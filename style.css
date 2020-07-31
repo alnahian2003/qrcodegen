@@ -169,7 +169,7 @@ footer {
 
 @media only screen and (min-width: 769px) {
     h1 {
-        margin: 1% 0;
+        margin: 5% 0;
         font-size: 3rem;
     }
 
@@ -178,6 +178,6 @@ footer {
     }
 
     footer {
-        margin-top: 2%;
+        margin-top: 0%;
     }
 }
