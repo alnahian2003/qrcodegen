@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>QR Code Generator | Al Nahian</title>
+</head>
+
+<body>
+    <h1>QR Code Generator</h1>
+    <div class="container">
+        <div class="qr-container">
+            <div id="qrcode"></div>
+            <form>
+                <textarea type="text" id="qr-data" placeholder="Enter Your Text (max length 120)" maxlength="120"
+                    required> </textarea>
+                <button type="submit" id="generate-button"><i class="fa fa-gear"></i> GENERATE</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>
+            Made With <span style="color: red;">♥</span> By
+            <a style="text-decoration: none; font-weight: bold; color: rgb(255, 255, 255);" target="_blank"
+                href="https://facebook.com/alnahian2003">Al Nahian</a>
+        </p>
+
+        <p>
+            Powered By
+            <a style="
+                text-decoration: none;
+                font-weight: bold;
+                color: rgb(252, 235, 7);
+              " target="_blank" href="https://hostweb.net">Host Web</a>
+        </p>
+    </footer>
+
+    <script src="qrcode.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

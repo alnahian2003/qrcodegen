@@ -1,0 +1,183 @@
+/* Global Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #8880ff;
+    text-align: center;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+h1 {
+    color: #fff;
+    font-size: 4rem;
+}
+
+form {
+    margin-top: 52%;
+}
+
+footer {
+    color: #fff;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* End Global Styling */
+
+
+.qr-container {
+    background-color: #fff;
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: .5em;
+}
+
+#qrcode {
+    margin: 20px auto auto 20px;
+    text-align: center;
+    border: 5px dashed #cccccc;
+    padding: 5px;
+    position: absolute;
+    left: 25%;
+    cursor: pointer;
+}
+
+#qrcode:hover {
+    border: 5px dashed #8880ff;
+    transition: .2s;
+}
+
+#qr-data {
+    height: 150px;
+    width: 90%;
+    outline: none;
+    border: 5px dashed #cccccc;
+    border-radius: .5em;
+    left: 0;
+    padding: 10px;
+    font-size: 18px;
+    resize: none;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    text-align: center;
+    word-wrap: wrap;
+}
+
+::placeholder {
+    text-align: center;
+    font-size: 16px;
+    color: #b4b3b3;
+}
+
+#qr-data:focus {
+    border: 5px dashed #8880ff;
+    transition: .2s;
+}
+
+#generate-button {
+    padding: 16px 20px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: #8880ff;
+    color: #fff;
+    border-radius: .5em;
+    font-size: 16px;
+    width: 90%;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0px 8px 10px 5px #00000020;
+}
+
+#generate-button:hover {
+    background-color: #a29bfe;
+    transition: .2s;
+
+}
+
+/* Resonsive Codes */
+/* For mobile phones: */
+@media only screen and (max-width: 480px) {
+    .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    h1 {
+        margin: 10% 0;
+        margin-bottom: 5%;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .container {
+        margin-top: 5%;
+    }
+
+    .qr-container {
+
+        height: auto;
+        width: 300px;
+        margin: 10% 0;
+        padding: 20px;
+    }
+
+    #qrcode {
+        margin: 20px auto;
+        left: 13%;
+    }
+
+    form {
+        margin-top: 100%;
+    }
+
+    footer {
+        top: 100%;
+        font-size: 16px;
+        margin-top: 5%;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 481px) {
+    h1 {
+        margin: 10% 0;
+        font-size: 2rem;
+    }
+
+    .qr-container {
+        margin-top: -10%;
+    }
+
+    footer {
+        margin-top: -10%;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    h1 {
+        margin: 1% 0;
+        font-size: 3rem;
+    }
+
+    .qr-container {
+        margin-top: 0%;
+    }
+
+    footer {
+        margin-top: 2%;
+    }
+}
