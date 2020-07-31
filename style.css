@@ -20,14 +20,6 @@ form {
     margin-top: 52%;
 }
 
-footer {
-    color: #fff;
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 /* End Global Styling */
 
 
@@ -142,14 +134,6 @@ footer {
     form {
         margin-top: 100%;
     }
-
-    footer {
-        top: 100%;
-        font-size: 16px;
-        margin-top: 5%;
-        width: 100%;
-        margin-bottom: 20px;
-    }
 }
 
 @media only screen and (min-width: 481px) {
@@ -161,10 +145,6 @@ footer {
     .qr-container {
         margin-top: -10%;
     }
-
-    footer {
-        margin-top: -10%;
-    }
 }
 
 @media only screen and (min-width: 769px) {
@@ -174,10 +154,6 @@ footer {
     }
 
     .qr-container {
-        margin-top: 0%;
-    }
-
-    footer {
         margin-top: 0%;
     }
 }
