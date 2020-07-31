@@ -137,13 +137,13 @@ form {
 }
 
 @media only screen and (min-width: 481px) {
-    h1 {
-        margin: 10% 0;
-        font-size: 2rem;
+   h1 {
+    margin: 5% 0;
+    font-size: 2rem;
     }
 
     .qr-container {
-        margin-top: -10%;
+    margin-top: 5%;
     }
 }
 
