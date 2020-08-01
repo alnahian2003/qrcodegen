@@ -22,5 +22,33 @@ generateButton.addEventListener("click", function (e) {
     if (data == "") {
         alert("You Cannot Leave Fields Empty!");
     }
+});
 
+//Downloading QR Code
+
+let downloadButton = document.getElementById("download-button"),
+    qrCanvas = document.querySelector("canvas"),
+    generatedQrCode = document.querySelector("img");
+
+downloadButton.addEventListener("click", function (e) {
+    e.preventDefault();
+    let data = qrData.value;
+
+    if (data == "") {
+        alert("Please Generate a QR Code To Download !");
+    } else {
+        const dataURI = qrCanvas.toDataURL("image / png");
+        generatedQrCode.src = dataURI;
+        // For Microsoft Edge or Old Browser Only
+        if (window.navigator.msSaveBlob) {
+            window.navigator.msSaveBlob(qrCanvas.msToBlob(), "qr-code.png")
+        } else {
+            const a = document.createElement("a");
+            document.body.appendChild(a);
+            a.href = qrCanvas.toDataURL();
+            a.download = "qr-code.png";
+            a.click();
+            document.body.removeChild(a);
+        }
+    }
 });
