@@ -16,10 +16,11 @@
         <div class="qr-container">
             <div id="qrcode"></div>
             <form>
-                <textarea type="text" id="qr-data" placeholder="Enter Your Text (max length 120)" maxlength="120"
-                    required> </textarea>
+                <label for="qr-data">Enter Your Text Below (max 260 characters)</label>
+                <textarea type="text" id="qr-data" maxlength="260" required> </textarea>
                 <button type="submit" id="generate-button"><i class="fa fa-gear"></i> GENERATE</button>
             </form>
+            <button id="download-button"><i class="fa fa-download"></i> DOWNLOAD</button>
         </div>
     </div>
 
